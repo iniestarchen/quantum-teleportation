@@ -1,0 +1,32 @@
+{
+  "id": "quantum-teleportation",
+  "name": "Quantum Teleportation",
+  "category": "fundamentals",
+  "description": "Teleport an arbitrary single-qubit state from Alice to Bob using a shared Bell pair and two classical bits.",
+  "long_description": "Quantum teleportation transfers the full quantum state of a qubit from one location to another using a pre-shared entangled Bell pair and two classical bits of communication. The original qubit is destroyed in the process (no-cloning). In this circuit q[0] holds the state |+\u27e9 to be teleported, q[1] is Alice's half of the Bell pair, and q[2] is Bob's half. After Alice's Bell measurement and Bob's corrections, q[2] ends up in |+\u27e9.",
+  "difficulty": "intermediate",
+  "qubit_count": 3,
+  "clbit_count": 2,
+  "gate_count": 7,
+  "depth": 7,
+  "tags": [
+    "teleportation",
+    "fundamentals",
+    "bell-measurement",
+    "classical-correction"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "q[2] in state |+\u27e9 after corrections",
+  "references": [
+    {
+      "title": "Bennett et al. (1993). Teleporting an Unknown Quantum State. PRL 70, 1895",
+      "url": "https://doi.org/10.1103/PhysRevLett.70.1895"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
